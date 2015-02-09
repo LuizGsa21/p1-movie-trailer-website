@@ -1,0 +1,12 @@
+{
+  "movies": [
+    {
+      "title": "some title",
+      "duration": "1 hour"
+    },
+    {
+      "title": "some title2",
+      "duration": "1 hour"
+    }
+  ]
+}
