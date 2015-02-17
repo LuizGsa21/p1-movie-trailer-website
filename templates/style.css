@@ -1,0 +1,170 @@
+
+body {
+    padding: 50px 0;
+}
+
+.tile-container {
+    text-align: center;
+    padding-top: 2em;
+}
+
+.tile-container h2 {
+    margin: 0 0 0.5em;
+}
+
+.tile-container:hover {
+    cursor: default;
+}
+
+.tile-cover {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    max-height: 250px;
+}
+
+.btn-group.center-buttons {
+    position: absolute;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+}
+
+.cover-container {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.tile-container:hover {
+    background-color: #EEE;
+    cursor: default;
+}
+
+.tile-cover {
+    background-color: #EEE;
+    cursor: zoom-in;
+}
+
+.rating {
+    display: inline-block;
+    margin: 1em 0;
+}
+
+.rating img {
+    height: 1.5em;
+}
+
+.option-buttons {
+    margin: 1em;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.hanging-close {
+    position: absolute;
+    z-index: 999;
+    right: -12px;
+    top: -12px;
+}
+
+/** Movie Info Modal **/
+#modal-movie-info p {
+    margin-bottom: 1em;
+}
+
+#modal-movie-info img {
+    max-height: 200px;
+    width: auto;
+}
+
+#modal-movie-info h2 {
+    margin-top: 0;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid gray;
+}
+
+#modal-movie-info .modal-content {
+    padding: 1em;
+    overflow: hidden;
+}
+
+.description:before {
+    content: 'Description: \A';
+    font-weight: bold;
+    white-space: pre;
+}
+
+.duration:before {
+    content: 'Duration: ';
+    font-weight: bold;
+}
+
+.genre:before {
+    content: 'Genre: ';
+    font-weight: bold;
+}
+
+.rated {
+    display: none;
+}
+
+.rated:before {
+    content: 'Rated: ';
+    font-weight: bold;
+}
+
+/* ./Movie Info Modal */
+
+/** Movie cover popup **/
+#modal-movie-cover .modal-content {
+    background: transparent;
+    overflow: hidden;
+}
+
+
+body > .cover {
+    /* Used for calculating cover width in modal */
+    max-width: 85%;
+}
+
+#modal-movie-cover .modal-dialog {
+    margin: 0 auto;
+}
+/* ./Movie cover popup */
+
+/* Mobile devices */
+@media screen
+and (max-width: 768px) {
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .tile-cover {
+        max-height: 200px;
+    }
+
+    .btn {
+        font-size: 0.9em;
+    }
+
+}
+
+@media screen
+and (max-width: 480px) {
+
+    #modal-movie-info .cover-container {
+        display: none;
+    }
+
+    #modal-movie-info .col-xs-6 {
+        width: 100%;
+    }
+
+    .rated {
+        display: block !important;
+    }
+}
