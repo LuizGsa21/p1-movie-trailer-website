@@ -143,6 +143,5 @@ $(function() {
             return $(this).attr('data-score');
         }
     });
-    $('#photo-container .photo img').attr('src');
 
 });
