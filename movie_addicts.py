@@ -7,13 +7,13 @@ import re
 
 def create_movie_tiles_content(movies):
     """
+    Generates movie tiles from the movie list using
+    "tile-container.html" as a template.
 
-    :param movies: lib.movie.media.Movie
-    :return: movie
-    """
-    """
     :param movies:
-    :return:
+    :type movies: list lib.media.movie
+    :return: the generated movie tiles.
+    :rtype: str
     """
     tile_template = open('templates/tile-container.html', 'r').read()
     content = ''
@@ -34,7 +34,8 @@ def create_movie_tiles_content(movies):
             genre=movie.genre,
             duration=movie.duration,
             movie_rating=movie.movie_rating,
-            description=movie.description
+            description=movie.description,
+            year=movie.year_released
         )
         clearfix = ''
         if count % 2 == 0:  # Add small grid clearfix every 2 tiles
@@ -49,31 +50,25 @@ def create_movie_tiles_content(movies):
     return content
 
 
-def get_header():
-    header = open('templates/header.html', 'r').read()  # header file
-    style = open('templates/style.css', 'r').read()  # style CSS
-
-    # Insert the style into the header, then return header content
-    return header.format(my_style=style)
-
-
-def get_footer():
-    # Get the footer content
-    footer = open('templates/footer.html', 'r').read()  # footer file
-
-    # Insert the app JavaScript, then return footer content
-    return footer.format(my_app=open('templates/app.js', 'r').read())
-
-
 def open_movies_page(movies):
-    # Get header content with styles attached
-    content = get_header()
+    """
+    Creates a web page from the list of movies and opens it using
+    the default web browser.
+
+    Note: Opens in a new tab if possible.
+
+    :param movies: list of movies
+    :type movies: list lib.media.movie
+    :return: absolutely nothing ;)
+    """
+    # Get header content
+    content = open('templates/header.html', 'r').read()
 
     # Replace the placeholder for the movie tiles with the actual dynamically generated content
     content += create_movie_tiles_content(movies)
 
-    # Add the finishing touch to content. aka footer
-    content += get_footer()
+    # Append the footer content
+    content += open('templates/footer.html', 'r').read()
 
     # Create or overwrite the output file
     output_file = open('movie_addicts.html', 'w')
