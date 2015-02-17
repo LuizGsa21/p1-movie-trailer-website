@@ -71,7 +71,7 @@ def open_movies_page(movies):
     content += open('templates/footer.html', 'r').read()
 
     # Create or overwrite the output file
-    output_file = open('movie_addicts.html', 'w')
+    output_file = open('index.html', 'w')
 
     # Output the file
     output_file.write(content)
