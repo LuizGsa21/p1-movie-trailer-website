@@ -8,7 +8,7 @@ __author__ = 'Luiz Arantes Sa'
 
 # Get the movie collection from movies.json
 json_data = open('movies.json', 'r')
-movies = json.loads(json_data.read())['movies']
+movies = json.loads(json_data.read())
 
 all_movies = []
 # Create Movie objects from the json content

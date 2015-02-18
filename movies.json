@@ -1,114 +1,112 @@
-{
-  "movies": [
-    {
-      "title": "The Imitation Game",
-      "duration": "114 min",
-      "description": "During World War II, mathematician Alan Turing tries to crack the enigma code with help from fellow mathematicians.",
-      "poster_image": "http://ia.media-imdb.com/images/M/MV5BNDkwNTEyMzkzNl5BMl5BanBnXkFtZTgwNTAwNzk3MjE@._V1__SX640_SY720_.jpg",
-      "youtube_trailer": "https://www.youtube.com/watch?v=S5CjKEFb-sM",
-      "genre": "Thriller | Drama | Biography",
-      "movie_rating": "PG-13",
-      "rating": "5",
-      "year": "2014"
-    },
-    {
-      "title": "The Dark Knight",
-      "duration": "152 min",
-      "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, the caped crusader must come to terms with one of the greatest psychological tests of his ability to fight injustice.",
-      "poster_image": "http://ia.media-imdb.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX640_SY720_.jpg",
-      "youtube_trailer": "https://www.youtube.com/watch?v=EXeTwQWrcwY",
-      "genre": "Action | Crime | Drama",
-      "movie_rating": "PG-13",
-      "rating": "4.5",
-      "year": "2008"
-    },
-    {
-      "title": "Inception",
-      "duration": "148min",
-      "description": "A thief who steals corporate secrets through use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO.",
-      "poster_image": "http://ia.media-imdb.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX640_SY720_.jpg",
-      "youtube_trailer": "https://www.youtube.com/watch?v=66TuSJo4dZM",
-      "genre": "Action | Mystery | Sci-Fi",
-      "movie_rating": "PG-13",
-      "rating": "4",
-      "year": "2010"
-    },
-    {
-      "title": "The Matrix",
-      "duration": "136min",
-      "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
-      "poster_image": "http://ia.media-imdb.com/images/M/MV5BMTkxNDYxOTA4M15BMl5BanBnXkFtZTgwNTk0NzQxMTE@._V1__SX640_SY720_.jpg",
-      "youtube_trailer": "https://www.youtube.com/watch?v=c3sBBRxDAqk",
-      "genre": "Action | Sci-Fi",
-      "movie_rating": "R",
-      "rating": "4",
-      "year": "1999"
-    },
-    {
-      "title": "Transformers: Age of Extinction",
-      "duration": "165min",
-      "description": "Autobots must escape sight from a bounty hunter who takes control of the human serendipity: Unexpectedly, Optimus Prime and his remaining gang turn to a mechanic and his daughter for help.",
-      "poster_image": "http://ia.media-imdb.com/images/M/MV5BMjEwNTg1MTA5Nl5BMl5BanBnXkFtZTgwOTg2OTM4MTE@._V1_SX640_SY720_.jpg",
-      "youtube_trailer": "https://www.youtube.com/watch?v=c3sBBRxDAqk",
-      "genre": "Action | Adventure | Sci-Fi",
-      "movie_rating": "PG-13",
-      "rating": "3.25",
-      "year": "2014"
-    },
-    {
-      "title": "The Avengers",
-      "duration": "143min",
-      "description": "Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity.",
-      "poster_image": "http://ia.media-imdb.com/images/M/MV5BMTk2NTI1MTU4N15BMl5BanBnXkFtZTcwODg0OTY0Nw@@._V1_SX640_SY720_.jpg",
-      "youtube_trailer": "https://www.youtube.com/watch?v=FAfR8omt-CY",
-      "genre": "Action | Adventure | Sci-Fi",
-      "movie_rating": "PG-13",
-      "rating": "4.5",
-      "year": "2012"
-    },
-    {
-      "title": "WALL-E",
-      "duration": "98min",
-      "description": "In the distant future, a small waste collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of mankind.",
-      "poster_image": "http://ia.media-imdb.com/images/M/MV5BMTczOTA3MzY2N15BMl5BanBnXkFtZTcwOTYwNjE2MQ@@._V1_SX640_SY720_.jpg",
-      "youtube_trailer": "https://www.youtube.com/watch?v=FAfR8omt-CY",
-      "genre": "Animation | Adventure | Romance",
-      "movie_rating": "G",
-      "rating": "4.5",
-      "year": "2008"
-    },
-    {
-      "title": "X-Men: Days of Future Past",
-      "duration": "131min",
-      "description": "The X-Men send Wolverine to the past in a desperate effort to change history and prevent an event that results in doom for both humans and mutants.",
-      "poster_image": "http://ia.media-imdb.com/images/M/MV5BMjEwMDk2NzY4MF5BMl5BanBnXkFtZTgwNTY2OTcwMDE@._V1_SX640_SY720_.jpg",
-      "youtube_trailer": "https://www.youtube.com/watch?v=FAfR8omt-CY",
-      "genre": "Action | Adventure | Sci-Fi",
-      "movie_rating": "PG-13",
-      "rating": "5",
-      "year": "2014"
-    },
-    {
-      "title": "Interstellar",
-      "duration": "169min",
-      "description": "A team of explorers travel through a wormhole in an attempt to ensure humanity's survival.",
-      "poster_image": "http://ia.media-imdb.com/images/M/MV5BMjIxNTU4MzY4MF5BMl5BanBnXkFtZTgwMzM4ODI3MjE@._V1_SX640_SY720_.jpg",
-      "youtube_trailer": "https://www.youtube.com/watch?v=FAfR8omt-CY",
-      "genre": "Adventure | Sci-Fi",
-      "movie_rating": "PG-13",
-      "rating": "5",
-      "year": "2014"
-    },
-    {
-      "title": "Big Hero 6",
-      "duration": "102min",
-      "description": "The special bond that develops between plus-sized inflatable robot Baymax, and prodigy Hiro Hamada, who team up with a group of friends to form a band of high-tech heroes.",
-      "poster_image": "http://ia.media-imdb.com/images/M/MV5BMjI4MTIzODU2NV5BMl5BanBnXkFtZTgwMjE0NDAwMjE@._V1_SX640_SY720_.jpg",
-      "youtube_trailer": "https://www.youtube.com/watch?v=PbA63a7H0bo",
-      "genre": "Animation | Action | Adventure",
-      "movie_rating": "PG",
-      "rating": "4",
-      "year": "2014"
-    }
-  ]
-}
+[
+  {
+    "title": "The Imitation Game",
+    "description": "During World War II, mathematician Alan Turing tries to crack the enigma code with help from fellow mathematicians.",
+    "poster_image": "images/the_imitation_game.jpg",
+    "youtube_trailer": "https://www.youtube.com/watch?v=S5CjKEFb-sM",
+    "duration": "114 min",
+    "genre": "Thriller | Drama | Biography",
+    "rating": "5",
+    "movie_rating": "PG-13",
+    "year": "2014"
+  },
+  {
+    "title": "The Dark Knight",
+    "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, the caped crusader must come to terms with one of the greatest psychological tests of his ability to fight injustice.",
+    "poster_image": "images/the_dark_knight.jpg",
+    "youtube_trailer": "https://www.youtube.com/watch?v=EXeTwQWrcwY",
+    "duration": "152 min",
+    "genre": "Action | Crime | Drama",
+    "rating": "4.5",
+    "movie_rating": "PG-13",
+    "year": "2008"
+  },
+  {
+    "title": "Inception",
+    "description": "A thief who steals corporate secrets through use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO.",
+    "poster_image": "images/inception.jpg",
+    "youtube_trailer": "https://www.youtube.com/watch?v=66TuSJo4dZM",
+    "duration": "148min",
+    "genre": "Action | Mystery | Sci-Fi",
+    "rating": "4",
+    "movie_rating": "PG-13",
+    "year": "2010"
+  },
+  {
+    "title": "The Matrix",
+    "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+    "poster_image": "images/the_matrix.jpg",
+    "youtube_trailer": "https://www.youtube.com/watch?v=c3sBBRxDAqk",
+    "duration": "136min",
+    "genre": "Action | Sci-Fi",
+    "rating": "4",
+    "movie_rating": "R",
+    "year": "1999"
+  },
+  {
+    "title": "Transformers: Age of Extinction",
+    "description": "Autobots must escape sight from a bounty hunter who takes control of the human serendipity: Unexpectedly, Optimus Prime and his remaining gang turn to a mechanic and his daughter for help.",
+    "poster_image": "images/transformers_age_of_extinction.jpg",
+    "youtube_trailer": "https://www.youtube.com/watch?v=c3sBBRxDAqk",
+    "duration": "165min",
+    "genre": "Action | Adventure | Sci-Fi",
+    "rating": "3.25",
+    "movie_rating": "PG-13",
+    "year": "2014"
+  },
+  {
+    "title": "The Avengers",
+    "description": "Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity.",
+    "poster_image": "images/the_avengers.jpg",
+    "youtube_trailer": "https://www.youtube.com/watch?v=FAfR8omt-CY",
+    "duration": "143min",
+    "genre": "Action | Adventure | Sci-Fi",
+    "rating": "4.5",
+    "movie_rating": "PG-13",
+    "year": "2012"
+  },
+  {
+    "title": "WALL-E",
+    "description": "In the distant future, a small waste collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of mankind.",
+    "poster_image": "images/wall-e.jpg",
+    "youtube_trailer": "https://www.youtube.com/watch?v=FAfR8omt-CY",
+    "duration": "98min",
+    "genre": "Animation | Adventure | Romance",
+    "rating": "4.5",
+    "movie_rating": "G",
+    "year": "2008"
+  },
+  {
+    "title": "X-Men: Days of Future Past",
+    "description": "The X-Men send Wolverine to the past in a desperate effort to change history and prevent an event that results in doom for both humans and mutants.",
+    "poster_image": "images/x-men_days_of_future_past.jpg",
+    "youtube_trailer": "https://www.youtube.com/watch?v=FAfR8omt-CY",
+    "duration": "131min",
+    "genre": "Action | Adventure | Sci-Fi",
+    "rating": "5",
+    "movie_rating": "PG-13",
+    "year": "2014"
+  },
+  {
+    "title": "Interstellar",
+    "description": "A team of explorers travel through a wormhole in an attempt to ensure humanity's survival.",
+    "poster_image": "images/interstellar.jpg",
+    "youtube_trailer": "https://www.youtube.com/watch?v=FAfR8omt-CY",
+    "duration": "169min",
+    "genre": "Adventure | Sci-Fi",
+    "rating": "5",
+    "movie_rating": "PG-13",
+    "year": "2014"
+  },
+  {
+    "title": "Big Hero 6",
+    "description": "The special bond that develops between plus-sized inflatable robot Baymax, and prodigy Hiro Hamada, who team up with a group of friends to form a band of high-tech heroes.",
+    "poster_image": "images/big_hero_6.jpg",
+    "youtube_trailer": "https://www.youtube.com/watch?v=PbA63a7H0bo",
+    "duration": "102min",
+    "genre": "Animation | Action | Adventure",
+    "rating": "4",
+    "movie_rating": "PG",
+    "year": "2014"
+  }
+]
