@@ -1,10 +1,7 @@
-import json
-
-from lib.media import movie
-import movie_addicts
-
-
 __author__ = 'Luiz Arantes Sa'
+import json
+import movie_addicts
+from lib.media import movie
 
 # Get the movie collection from movies.json
 json_data = open('movies.json', 'r')
