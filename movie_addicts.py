@@ -15,7 +15,8 @@ def create_movie_tiles_content(movies):
     :return: the generated movie tiles.
     :rtype: str
     """
-    tile_template = open('templates/tile-container.html', 'r').read()
+    with open('templates/tile-container.html', 'r') as template:
+        tile_template = template.read()
     content = ''
     # Keep track of the current movie tile
     # so we know when to insert a clearfix div
@@ -61,21 +62,16 @@ def open_movies_page(movies):
     :type movies: list lib.media.movie
     :return: absolutely nothing ;)
     """
-    # Get header content
-    content = open('templates/header.html', 'r').read()
-
     # Replace the placeholder for the movie tiles with the actual dynamically generated content
-    content += create_movie_tiles_content(movies)
+    movie_tiles = create_movie_tiles_content(movies)
 
-    # Append the footer content
-    content += open('templates/footer.html', 'r').read()
+    # Wrap the header and footer content around them movie tiles
+    with open('templates/header.html', 'r') as header, open('templates/footer.html', 'r') as footer:
+        content = header.read() + movie_tiles + footer.read()
 
     # Create or overwrite the output file
-    output_file = open('index.html', 'w')
-
-    # Output the file
-    output_file.write(content)
-    output_file.close()
+    with open('index.html', 'w') as output_file:
+        output_file.write(content)
 
     # open the output file in the browser
     url = os.path.abspath(output_file.name)

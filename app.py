@@ -4,8 +4,8 @@ import movie_addicts
 from lib.media import movie
 
 # Get the movie collection from movies.json
-json_data = open('movies.json', 'r')
-movies = loads(json_data.read())
+with open('movies.json', 'r') as json_data:
+    movies = loads(json_data.read())
 
 all_movies = []
 # Create Movie objects from the json content
