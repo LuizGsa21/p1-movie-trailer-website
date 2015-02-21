@@ -65,7 +65,7 @@ def open_movies_page(movies):
     # Replace the placeholder for the movie tiles with the actual dynamically generated content
     movie_tiles = create_movie_tiles_content(movies)
 
-    # Wrap the header and footer content around them movie tiles
+    # Wrap the header and footer content around the movie tiles
     with open('templates/header.html', 'r') as header, open('templates/footer.html', 'r') as footer:
         content = header.read() + movie_tiles + footer.read()
 
