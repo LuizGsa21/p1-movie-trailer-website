@@ -99,9 +99,9 @@ $(function() {
     var tiles = $('.tile-container');
 
     // Animate in the movies when the page loads
-    //tiles.hide().first().show("fast", function showNext() {
-    //    $(this).next("div").show("fast", showNext);
-    //});
+    tiles.hide().first().show("fast", function showNext() {
+        $(this).next("div").show("fast", showNext);
+    });
 
     // Play trailer when users clicks "play trailer"
     // button that is INSIDE a movie tile.
