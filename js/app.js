@@ -99,9 +99,9 @@ $(function() {
     var tiles = $('.tile-container');
 
     // Animate in the movies when the page loads
-    tiles.hide().first().show("fast", function showNext() {
-        $(this).next("div").show("fast", showNext);
-    });
+    //tiles.hide().first().show("fast", function showNext() {
+    //    $(this).next("div").show("fast", showNext);
+    //});
 
     // Play trailer when users clicks "play trailer"
     // button that is INSIDE a movie tile.
@@ -144,4 +144,59 @@ $(function() {
         }
     });
 
+    function resizeGridColumns(elements, columnsPerRow) {
+
+        var index = 0, // current column index
+            maxHeight, // max height on current row
+            endRow, // end of current row
+            currentH, // current element height
+            element, // current element
+            size = elements.length;
+
+        while (index < size) {
+            // Get the end of current row
+            endRow = Math.min(size, index + columnsPerRow);
+            var i = index;
+            // Get max height on current row
+            maxHeight = 0;
+            while (i < endRow) {
+                element = $(elements[i++]);
+                element.css('paddingTop', '0');
+                currentH = element.outerHeight();
+                if (currentH > maxHeight)
+                    maxHeight = currentH;
+            }
+
+            // Update column's `paddingTop` to align movies on current row
+            while(index < endRow) {
+                element = $(elements[index++]);
+                console.log(index);
+                var height = element.outerHeight();
+                var offset = maxHeight - height;
+                element.css('paddingTop', offset + 16);
+            }
+        }
+
+    }
+
+    var columnsPerRow = 0;
+    $(window).resize(function () {
+        var currentColumns = 0;
+        // Get the current number of rows
+        if($(window).width() > 991) {
+            currentColumns = 3;
+        } else if($(window).width() > 767) {
+            currentColumns = 2;
+        } else {
+            currentColumns = 1;
+        }
+
+        // Update column height when a new number of columns is set
+        if (currentColumns != columnsPerRow) {
+            columnsPerRow = currentColumns;
+            resizeGridColumns($('.tile-container'), columnsPerRow);
+        }
+    });
+
+    $(window).trigger('resize');
 });
