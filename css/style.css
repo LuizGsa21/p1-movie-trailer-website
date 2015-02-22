@@ -5,7 +5,7 @@ body {
 
 .tile-container {
     text-align: center;
-    padding-top: 2em;
+    /*padding-bottom: 16px;*/
 }
 
 .tile-container h2 {
@@ -145,6 +145,10 @@ and (max-width: 768px) {
 
     .tile-cover {
         max-height: 200px;
+    }
+
+    .tile-container {
+        padding-bottom: 1em;
     }
 
     .btn {
