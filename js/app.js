@@ -165,7 +165,6 @@ $(function() {
             // Update column's `paddingTop` to align movies on current row
             while(index < endRow) {
                 element = $(elements[index++]);
-                console.log(index);
                 var height = element.outerHeight();
                 var offset = maxHeight - height;
                 element.css('paddingTop', offset + 16);
