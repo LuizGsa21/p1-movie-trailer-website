@@ -176,15 +176,13 @@ $(function() {
     var columnsPerRow = 0;
     $(window).resize(function () {
         var currentColumns = 0;
-        // Get the current number of rows
-        if($(window).width() > 991) {
+        if(window.matchMedia('all and (min-width: 992px)').matches) {
             currentColumns = 3;
-        } else if($(window).width() > 767) {
+        } else if(window.matchMedia('all and (min-width: 768px)').matches) {
             currentColumns = 2;
         } else {
             currentColumns = 1;
         }
-
         // Update column height when a new number of columns is set
         if (currentColumns != columnsPerRow) {
             columnsPerRow = currentColumns;
